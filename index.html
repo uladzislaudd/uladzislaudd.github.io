@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <!--
   NOTHING TO SEE HERE
                                #####
@@ -60,202 +61,181 @@
  ######### ##########!!!!#!!!!#!!!!!!#**********!!!!!!!!!!!!***#
                      #################*********
 -->
+
 <head>
 
- <style>
- .top { grid-area: top; }
- .mid { grid-area: mid; }
- .bot { grid-area: bot; }
+	<style>
 
- .foto { grid-area: foto; }
- .info { grid-area: info; }
- 
- .name { grid-area: name; }
- .bout { grid-area: bout; }
+		.grid-container-page1 { display: grid; grid-template-areas: 'top' 'mid' 'bot';}
 
- .skll { grid-area: skll; }
+		.grid-container-top { display: grid; grid-template-areas: 'foto info'; }
+		.grid-container-mid { display: grid; grid-template-areas: 'skll exp1'; }
+		.grid-container-bot { display: grid; grid-template-areas: 'last'; }
 
- .exp1 { grid-area: exp1; }
- 
- .link { grid-area: link; }
- .lang { grid-area: lang; }
- .hard { grid-area: hard; }
- .soft { grid-area: soft; }
- 
- .educ { grid-area: educ; }
- .exp2 { grid-area: exp2; }
+		.grid-container-info { display: grid; gap: 3px; grid-template-areas: 'name' 'bout'; }
+		.grid-container-skll { display: grid; gap: 3px; grid-template-areas: 'link' 'lang' 'hard' 'soft'; }
+		.grid-container-exp1 { display: grid; gap: 3px; grid-template-areas: 'educ' 'exp2'; }
 
- .last { grid-area: last; }
+		.grid-container-page1 > div {
+			text-align: left;
+			gap: 3px;
+			font-size: 20px;
+		}
 
- .grid-container-page1 { display: grid; grid-template-areas: 'top' 'mid' 'bot';}
+		.grid-container-info	> div { background-color: #e2f1fd; color: #486c8f; }
+		.grid-container-skll	> div { background-color: #e2f1fd; color: #486c8f; }
+		.grid-container-exp1	> div { background-color: #e2f1fd; color: #486c8f; }
+		.grid-container-bot		> div	{ background-color: #e2f1fd; color: #486c8f; }
 
- .grid-container-top { display: grid; grid-template-areas: 'foto info'; }
- .grid-container-mid { display: grid; grid-template-areas: 'skll exp1'; }
- .grid-container-bot { display: grid; grid-template-areas: 'last'; }
-
- .grid-container-info { display: grid; gap: 3px; grid-template-areas: 'name' 'bout'; }
- .grid-container-skll { display: grid; gap: 3px; grid-template-areas: 'link' 'lang' 'hard' 'soft'; }
- .grid-container-exp1 { display: grid; gap: 3px; grid-template-areas: 'educ' 'exp2'; }
-
- .grid-container-page1 > div {
-  text-align: left;
-  gap: 3px;
-  font-size: 20px;
- }
-
- .grid-container-info > div { background-color: #e2f1fd; color: #486c8f; }
- .grid-container-skll > div { background-color: #e2f1fd; color: #486c8f; }
- .grid-container-exp1 > div { background-color: #e2f1fd; color: #486c8f; }
- .grid-container-bot > div  { background-color: #e2f1fd; color: #486c8f; }
-
- </style>
+	</style>
 
 </head>
 
 <body style="width: 1000px;">
 
- <div class="grid-container-page1">
+	<div class="grid-container-page1">
 
-  <div class="grid-container-top">
+		<div class="grid-container-top">
 
-   <div class="foto" style="width: 300px; background-color: white;">
-    <img style="height: 300px" src="img/photo.jpeg">
-   </div>
+			<div class="foto" style="width: 300px; background-color: white;">
+				<img style="height: 300px" src="img/photo.jpeg">
+			</div>
 
-   <div class="grid-container-info" style="height: 300px">
- 
-    <div class="name" style="height: 75px;">
-     <h1>Uladzislau D</h1>
-    </div>
+			<div class="grid-container-info" style="height: 300px">
+				
+				<div class="name" style="height: 75px;">
+					<h1>Uladzislau D</h1>
+				</div>
 
-    <div class="bout" style="height:222px;">
-     <b>Software developer</b> specializing in software developement for Linux
-     with almost 5 years of experience. Well-versed in numerous programming
-     languages including <b>C</b>, <b>Golang</b>, <b>C++</b>. Looking for a <b>C/Go/C++
-     software developer</b> role with a <b>relocation to the EU/Canada.</b>
-    </div>
+				<div class="bout" style="height:222px;">
+					<b>Software developer</b> specializing in software developement for Linux
+					with almost 5 years of experience. Well-versed in numerous programming
+					languages including <b>C</b>, <b>Golang</b>, <b>C++</b>. Looking for a <b>C/Go/C++
+					software developer</b> role with a <b>relocation to the EU/Canada.</b>
+				</div>
 
-   </div>
+			</div>
 
-  </div>
+		</div>
 
-  <div class="grid-container-mid" style="height: 1150px;">
+		<div class="grid-container-mid" style="height: 1150px;">
 
-   <div class="grid-container-skll" style="width: 300px; height: min-content;">
-   
-    <div class="link">
-     <h3>Contacts:</h3>
-     <ul>
-     <li><a href="mailto:uladzislaud@proton.me">uladzislaud@proton.me</a></li>
-     <li><a href="https://github.com/uladzislaudd/">github.com/uladzislaudd</a></li>
-     <li><a href="https://www.linkedin.com/in/uladzislaud/">www.linkedin.com/in/uladzislaud</a></li>
-     </ul>
-    </div>
-  
-    <div class="lang">
-     <h3>Languages:</h3>
-     <ul>
-     <li>English - B1+</li>
-     <li>Russian - Native </li>
-     </ul>
-    </div>
+			<div class="grid-container-skll" style="width: 300px; height: min-content;">
+				
+				<div class="link">
+					<h3>Contacts:</h3>
+					<ul>
+						<li><a href="mailto:uladzislaud@proton.me">uladzislaud@proton.me</a></li>
+						<li><a href="https://github.com/uladzislaudd/">github.com/uladzislaudd</a></li>
+						<li><a href="https://www.linkedin.com/in/uladzislaud/">www.linkedin.com/in/uladzislaud</a></li>
+					</ul>
+				</div>
+			
+				<div class="lang">
+					<h3>Languages:</h3>
+					<ul>
+						<li>English - B1+</li>
+						<li>Russian - Native </li>
+					</ul>
+				</div>
 
-    <div class="hard">
-     <h3>Hard skills:</h3>
-     <ul>
-     <li>C Language</li>
-     <li>Go Language</li>
-     <li>C++</li>
-     <li>Linux/Bash</li>
-     <li>SQL</li>
-     <li>Git</li>
-     <li>Make/CMake</li>
-     <li>GDB/Valgrind</li>
-     </ul>
-    </div>
+				<div class="hard">
+					<h3>Hard skills:</h3>
+					<ul>
+						<li>C Language</li>
+						<li>Go Language</li>
+						<li>C++</li>
+						<li>Linux/Bash</li>
+						<li>SQL</li>
+						<li>Git</li>
+						<li>Make/CMake</li>
+						<li>GDB/Valgrind</li>
+					</ul>
+				</div>
 
-    <div class="soft">
-     <h3>Soft skills:</h3>
-     <ul>
-     <li>Analytical Thinking</li>
-     <li>Adaptability</li>
-     <li>Critical Thinking</li>
-     <li>Problem solving</li>
-     </ul>
-    </div>
+				<div class="soft">
+					<h3>Soft skills:</h3>
+					<ul>
+						<li>Analytical Thinking</li>
+						<li>Adaptability</li>
+						<li>Critical Thinking</li>
+						<li>Problem solving</li>
+					</ul>
+				</div>
 
-   </div>
+			</div>
 
-   <div class="grid-container-exp1" style="height: min-content;">
+			<div class="grid-container-exp1" style="height: min-content;">
 
-    <div class="educ">
-     <h3>Education</h3>
-     <h4>Belarusian State University of Informatics and Radioelectronics</h4>
-     Bachelor's degree, Computer and Information Systems Security/Information
-     Assurance
-    </div>
-   
-    <div class="expr2">
-     <h3>Experience</h3>
+				<div class="educ">
+					<h3>Education</h3>
+					<h4>Belarusian State University of Informatics and Radioelectronics</h4>
+					Bachelor's degree, Computer and Information Systems Security/Information
+					Assurance
+				</div>
+				
+				<div class="expr2">
 
-     <ul>
+					<h3>Experience</h3>
 
-     <li>
-      <b><a href="https://www.tcp-soft.com/">TSP-Soft</a> - C++ developer</b>, Minsk, Belarus<br>
-      02.2022 - 03.2022 (1 month)
-      <ul>
-      <li>
-       Unfortunately, the tasks that I had to perform did not correspond to those that I
-       was promised at the interview.
-      </li>
-      </ul>
-     </li>
+					<ul>
 
-     <li>
-      <b><a href="https://www.epam.com/">EPAM Systems</a> - Software developer</b>, Minsk, Belarus<br>
-      09.2019 - 12.2021 (2 years 4 months)
-      <ul>
-      <li>
-       Worked on various projects: database migration application, custom RTOS-based
-       firmware for BG96 platform and custom Linux-based firmware for Tegra platform.
-      </li>
-      <li>
-       <b>Tools:</b> C, SQL, Golang, Bash, Git, Linux, Make, GDB, Valgrind.
-      </li>
-      </ul>
-     </li>
+						<li>
+							<b><a href="https://www.tcp-soft.com/">TSP-Soft</a> - C++ developer</b>, Minsk, Belarus<br>
+							02.2022 - 03.2022 (1 month)
+							<ul>
+								<li>
+									Unfortunately, the tasks that I had to perform did not correspond to those that I
+									was promised at the interview.
+								</li>
+							</ul>
+						</li>
 
-     <li>
-      <b>Research Institute - Software developer</b>, Minsk, Belarus<br>
-      09.2017 - 10.2019 (2 years 2 months)
-      <ul>
-      <li>
-       Mainly worked on different versions of a cross-platform cryptographic client-server
-       application.
-      </li>
-      <li>
-       <b>Tools:</b> C, C++, Bash, Git, Linux, Qt, Make, CMake, GDB, Valgrind.
-      </li>
-      </ul>
-     </li>
-  
-     </ul>
+						<li>
+							<b><a href="https://www.epam.com/">EPAM Systems</a> - Software developer</b>, Minsk, Belarus<br>
+							09.2019 - 12.2021 (2 years 4 months)
+							<ul>
+								<li>
+									Worked on various projects: database migration application, custom RTOS-based
+									firmware for BG96 platform and custom Linux-based firmware for Tegra platform.
+								</li>
+								<li>
+									<b>Tools:</b> C, SQL, Golang, Bash, Git, Linux, Make, GDB, Valgrind.
+								</li>
+							</ul>
+						</li>
 
-    </div>
+						<li>
+							<b>Research Institute - Software developer</b>, Minsk, Belarus<br>
+							09.2017 - 10.2019 (2 years 2 months)
+							<ul>
+								<li>
+									Mainly worked on different versions of a cross-platform cryptographic client-server
+									application.
+								</li>
+								<li>
+									<b>Tools:</b> C, C++, Bash, Git, Linux, Qt, Make, CMake, GDB, Valgrind.
+								</li>
+							</ul>
+						</li>
 
-   </div>
+					</ul>
 
-  </div>
+				</div>
 
-  <div class="grid-container-bot" style="height: 25px;">
+			</div>
 
-   <div class="last" style="text-align: right;">
-    The latest version of this cv is available at <a href="https://uladzislaudd.github.io/cv/">uladzislaudd.github.io/cv/</a>
-   </div>
+		</div>
 
-  </div>
+		<div class="grid-container-bot" style="height: 25px;">
 
- </div>
+			<div class="last" style="text-align: right;">
+				The latest version of this cv is available at <a href="https://uladzislaudd.github.io/cv/">uladzislaudd.github.io/cv/</a>
+			</div>
+
+		</div>
+
+	</div>
 
 </body>
 
